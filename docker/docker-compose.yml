@@ -1,0 +1,10 @@
+version: '3.4'
+
+services:
+  example-app:
+    image: example-app
+    build: .
+    environment:
+      NODE_ENV: production
+    ports:
+      - 8080:3000

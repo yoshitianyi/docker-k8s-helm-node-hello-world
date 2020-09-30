@@ -1,9 +1,9 @@
 # omitting .PHONY
 docker-build:
-	docker build -t hello-world .
+	docker build -t example-app .
 
 docker-run:
-	docker run -d -p 8080:3000 hello-world
+	docker run -d -p 8080:3000 example-app
 
 test:
 	curl http://localhost:8080

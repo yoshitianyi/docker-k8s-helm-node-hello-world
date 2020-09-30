@@ -1,0 +1,12 @@
+version: '3.4'
+
+services:
+  example-app:
+    image: example-app
+    build: .
+    environment:
+      NODE_ENV: development
+    ports:
+      - 8080:3000
+      - 9229:9229
+    command: ["node", "--inspect=0.0.0.0:9229", "app.js"]
