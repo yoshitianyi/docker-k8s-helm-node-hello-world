@@ -1,3 +1,3 @@
 # K8s Helm Chart Build
 
-To be created.
+TODO: Reduce files to be a hello-world chart.
