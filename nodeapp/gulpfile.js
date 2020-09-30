@@ -1,5 +1,4 @@
 const gulp = require('gulp');
-const del = require('del');
 const copy = require('gulp-copy');
 const install = require('gulp-install');
 const tar = require('gulp-tar');
@@ -28,10 +27,5 @@ gulp.task('tgz', function(done) {
     .pipe(tar(`${pkginfo.name}_${pkginfo.version}.tar`))
     .pipe(gzip())
     .pipe(gulp.dest('./dist'))
-    done();
-});
-
-gulp.task('clean', function(done) {
-    del('./tmp', { force: true })
     done();
 });
